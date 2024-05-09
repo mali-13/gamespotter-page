@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamespotter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFF8F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 100%;
+            width: auto;
+            height: 100%;
+            position: relative; /* Added position relative */
+        }
+
+        .container img {
+            max-width: 100%;
+            width: auto;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 48px;
+            right: 48px;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 700;
+            font-size: 4rem;
+            color: #3B0811;
+        }
+
+        @media (max-width: 414px) {
+            .watermark {
+                top: 24px;
+                right: 24px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="/images/gamespotter-enhanced.jpg" alt="Lively players and spectators in a game of football">
+    <div class="watermark">gamespotter</div>
+</div>
+
+</body>
+</html>
