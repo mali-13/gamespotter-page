@@ -44,17 +44,19 @@
 <body>
 <div class="container">
     <div class="loader">LOADING...</div> <!-- Loader element -->
-    <img src="/images/gamespotter.jpg" alt="Players and spectators in lively game of football" id="largeImage">
+    <img src="" alt="Players and spectators in lively game of football" id="gamespotterImage">
 </div>
 
 <script>
-    const largeImage = document.getElementById('largeImage');
+    const gamespotterImage = document.getElementById('gamespotterImage');
     const loader = document.querySelector('.loader');
 
-    largeImage.onload = function() {
+    gamespotterImage.onload = function() {
         loader.style.display = 'none'; // Hide loader when image is loaded
-        largeImage.style.display = 'block'; // Show the image
+        gamespotterImage.style.display = 'block'; // Show the image
     };
+
+    gamespotterImage.src = '/images/gamespotter.jpg'
 </script>
 </body>
 </html>
